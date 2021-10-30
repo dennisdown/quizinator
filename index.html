@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Quizinator!</title>
 </head>
 
 <body>
+    <div><h1>Welcome to the Quizinator!</h1></div><br />
     <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
+        <p>Try to answer the following code-related questions within the time limit. <br /> Keep in mind that <span>incorrect answers</span> will penalize your score/time by <span>ten seconds!</span></p>
+        <div id="question-container">
+            <h3 id="question" class="question hide">Question</h3>
+            
+            <div id="answer-buttons" class="btn-grid hide" >
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+
             <div class="controls">
                 <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn">Next</button>
             </div>
-
         </div>
-
     </div>
-    <script src="/assets/js/script.js"></script>
+
+
+
 </body>
 </html>

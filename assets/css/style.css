@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+:root {
+  --hue-neutral: 270;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  background-color: lightblue;  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+body p {
+  font-size: 1em;
+  justify-content: left;
+  text-align: center;
+
+}
+
+body p span {
+  font-style: italic;
+  color: rgb(216, 45, 45);
+}
+
+.container {
+  background-color: whitesmoke;
+  height: 418px;
+  max-height: 70%;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+  /* border: 2px solid red; */
+}
+
+.question {
+  justify-content: left;
+  margin-left: 10px;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 75%;
+}
+
+.btn {
+  color: whitesmoke;
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue-neutral), 100%, 30%);
+  background-color: hsl(var(--hue-neutral), 100%, 50%);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.controls {
+  text-align: center;
+}
+
+.start-btn {
+  font-weight: bold;
+  width: 115px;
+  max-width: 25%;
+}
+
+.hide {
+  display: none;
+}
