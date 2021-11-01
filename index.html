@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <div><h1>Welcome to the Quizinator!</h1></div><br />
     <div class="container">
+        <div><h1>Welcome to the Quizinator!</h1></div>
+
         <p>Try to answer the following code-related questions within the time limit. <br /> Keep in mind that <span>incorrect answers</span> will penalize your score/time by <span>ten seconds!</span></p>
-        <div id="question-container">
-            <h3 id="question" class="question hide">Question</h3>
+        <div id="question-container" class="question-container hide">
+            <h3 id="question" class="question">Question</h3>
             
-            <div id="answer-buttons" class="btn-grid hide" >
+            <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+        </div>
 
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-            </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
 
 
-
+<script src="./assets/js/script.js"></script> 
 </body>
 </html>

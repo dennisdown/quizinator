@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -40,8 +40,8 @@ body p span {
 
 .container {
   background-color: whitesmoke;
-  height: 418px;
-  max-height: 70%;
+  height: 600px;
+  /* max-height: 70%; */
   width: 800px;
   max-width: 80%;
   border-radius: 5px;
@@ -63,18 +63,32 @@ body p span {
 .btn {
   color: whitesmoke;
   --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue-neutral), 100%, 30%);
+  border: 2px solid hsl(var(--hue-neutral), 100%, 30%);
   background-color: hsl(var(--hue-neutral), 100%, 50%);
   border-radius: 10px;
   padding: 5px;
   font-size: 1.2em;
 }
 
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  background-color: green;
+  color: black;
+}
+
+.btn.wrong {
+  background-color: red;
+  color: black;
+}
+
 .controls {
   text-align: center;
 }
 
-.start-btn {
+.start-btn, .next-btn{
   font-weight: bold;
   width: 115px;
   max-width: 25%;
